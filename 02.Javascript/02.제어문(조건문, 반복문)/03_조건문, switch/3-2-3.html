@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-2-3.html</title>
+</head>
+<body>
+    <script>
+        const number = Number(prompt('숫자를 입력하세요'));
+
+        const result = number >= 0 ? '0이상의 숫자' : '0보다 작은 숫자';
+        alert(result);
+
+        switch (true) {
+            case result >= 0:
+                document.write('0이상의 숫자');
+                break;
+        
+            default: 
+                document.write('0보다 작은 숫자');
+                break;
+        }
+    </script>
+</body>
+</html>

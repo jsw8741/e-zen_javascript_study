@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script>
+      // 변수를 선언합니다.
+      let numbers = [273, 52, 103, 32, 57, 24, 76]
+
+      // 처리합니다.
+      // (1) 홀수만 추출
+        let result1 = numbers.filter(function(element){
+          return element % 2 != 0;
+        });
+
+        let result1_1 = numbers.filter(element => element % 2 != 0);
+
+      // (2) 100 이하의 수만 추출
+        let result2 = numbers.filter(function(element){
+          return element <= 100;
+        });
+
+        let result2_1 = numbers.filter(element => element <= 100);
+
+      // (3) 5로 나눈 나머지가 0인 수만 추출
+        let result3 = numbers.filter(function(element){
+          return element % 5 == 0;
+        });
+
+        let result3_1 = numbers.filter(element => element % 5 == 0);
+
+      // 출력합니다.
+      console.log(result1);
+      console.log(result1_1);
+      console.log(result2);
+      console.log(result2_1);
+      console.log(result3);
+      console.log(result3_1);
+    </script>
+  </head>
+  <body></body> 
+</html>
+ 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid1.html</title>
+    <style>
+        #wrapper{
+            display: grid;
+            /* fr은 비율(반응형) */
+            /* 너비가 같은 컬럼 3개를 반복한다. */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: minmax(100px, auto);
+        }
+
+        .items{
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        /* items중에서 홀수 번째 (2n+1과 같음) */
+        .items:nth-child(odd){
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="wrapper">
+            <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex nesciunt, quia dignissimos id quae veritatis eius dolore. Praesentium reiciendis</div>
+            <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex nesciunt, quia dignissimos id quae veritatis eius dolore.</div>
+            <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex nesciunt, quia dignissimos id quae veritatis</div>
+            <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex nesciunt, quia dignissimos id quae</div>
+            <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta ex nesciunt, quia dignissimos</div>
+        </div>
+    </div>
+</body>
+</html>

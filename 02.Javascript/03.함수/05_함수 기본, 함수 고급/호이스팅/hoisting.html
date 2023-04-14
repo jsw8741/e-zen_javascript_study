@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoisting.html</title>
+</head>
+<body>
+    <script>
+        // 비익명 함수
+        a();
+
+        function a(){
+            document.write("비익명 함수", '<br>');
+        }
+        
+        // 익명 함수
+        
+        const b = function(){
+            document.write("익명 함수");
+        }
+        b();
+        </script>
+</body>
+</html>

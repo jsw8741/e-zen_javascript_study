@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq_selec3_3.html</title>
+
+    <style>
+        .aqua{background-color:#0ff;}
+        .red{background-color:#f00;}
+        .green{background-color:#0f0;}
+        .yellow{background-color:#ff0;}
+    </style>
+</head>
+<body>
+    <p id="p1">내용1</p>
+	<p id="p2" class="red">내용2</p>
+	<p id="p3">내용3</p>
+	<p id="p4" class="green">내용4</p>
+	<p id="p5" class="yellow">내용5</p>
+	<p id="p6"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(function(){
+            // 클래스 추가
+            $('#p1').addClass('aqua');
+
+            // 클래스 삭제
+            $('#p2').removeClass('red');
+
+            // 토글 : 있으면 지우고 없으면 추가
+            $('#p3').toggleClass('green');
+            $('#p4').toggleClass('green');
+
+            // yellow를 가지고있는지 판단(있으면 True, 없으면 flase)
+            var result = $('#p5').hasClass('yellow');
+            console.log(result);
+        });
+    </script>
+</body>
+</html>

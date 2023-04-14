@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = Number(prompt('첫 번째 정수를 입력해 주세요.'));
+        var num2 = Number(prompt('두 번째 정수를 입력해 주세요.'));
+        var num3 = Number(prompt('세 번째 정수를 입력해 주세요.'));
+
+        var sum = num1 + num2 + num3;
+        var av = sum / 3;
+
+        var max = num1;
+        var min = num1;
+
+        if(max < num2){
+            max = num2;
+        }
+        if(max < num3){
+            max = num3;
+        }
+
+        if(min > num2){
+            min = num2;
+        }
+        if(min > num3){
+            min = num3;
+        }
+
+        console.log(`최대값 : ${max}`);
+        console.log(`최소값 : ${min}`);
+        console.log(`합계 : ${sum}`);
+        console.log(`평균 : ${av}`);
+    </script>
+</body>
+</html>

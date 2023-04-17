@@ -1,0 +1,94 @@
+@charset "utf-8";
+header {
+  text-align: center;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e3e6e9 !important;
+}
+
+#container #header #footer {
+  max-width: 768px;
+  min-width: 460px;
+}
+
+.wrap {
+  padding: 0 254px 0 254px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgb(14, 238, 51) !important;
+}
+
+.form-control {
+  border-right: 0px !important;
+}
+.point {
+  background-color: white !important;
+  border-left: 0px !important;
+  color: #cacbce !important;
+}
+
+.name_box {
+  margin-bottom: 20px !important;
+}
+
+.gender_box {
+  margin-top: 20px !important;
+}
+
+label > p {
+  color: gray;
+  display: inline-block;
+}
+
+.ph_g {
+  margin-bottom: 20px !important;
+}
+.ph_ch {
+  padding: 0 !important;
+  background-color: rgb(19, 219, 19);
+  text-align: center;
+  line-height: 250%;
+}
+
+.ph_ch > a {
+  color: white !important;
+  font-weight: bold;
+}
+
+#one_more {
+  background-color: rgb(201, 197, 197);
+}
+
+.login > button {
+  width: 100%;
+  background-color: rgb(19, 219, 19);
+  font-weight: bold;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer ul li {
+  font-size: 12px;
+  position: relative;
+  display: inline;
+  padding: 0 3px 0 7px;
+  background: url(https://static.nid.naver.com/images/join/pc/bu_bar_2x.gif)
+    left 50% no-repeat;
+  background-size: 1px 10px;
+  color: #8c8d92;
+}
+
+address > a {
+  color: #8c8d92 !important;
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+main {
+  margin-top: 56px;
+}
+
+main > section {
+  padding: 40px 0;
+}
+
+.data_box {
+  background-color: white !important;
+  padding: 0;
+  align-items: center;
+  display: flex;
+}
+
+.card-body {
+  padding-top: 0 !important;
+  text-align: center;
+}
+
+.data_box_2 {
+  list-style: none;
+}
+
+.text1 {
+  text-align: left;
+}
+
+.text1 > ul > li {
+  margin: 20px;
+}

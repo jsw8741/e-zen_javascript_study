@@ -67,6 +67,6 @@ $("#humidity").text(`습도 : ${binding.humidity}℃`);
 // 체감 온도
 $("#fell_like").text(`체감 온도 : ${binding.fell_like}℃`);
 // 풍속
-$("#speed").text(`풍속 : ${binding.wind}`);
+$("#speed").text(`풍속 : ${binding.wind} m/s`);
 // 날씨 조건
 $("#description").text(`${binding.description}`);
